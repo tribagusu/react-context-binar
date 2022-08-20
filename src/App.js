@@ -2,7 +2,6 @@ import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
 import { MainContext } from "./context/MainContext";
-import Toggle from "./components/Toggle";
 import LayoutContextProvider from "./context/LayoutContext";
 
 function App() {
@@ -19,7 +18,6 @@ function App() {
       <LayoutContextProvider>
         <MainContext.Provider value={MainContextValue}>
           <Card />
-          <Toggle />
         </MainContext.Provider>
       </LayoutContextProvider>
     </div>

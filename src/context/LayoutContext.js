@@ -1,7 +1,6 @@
 import React, { Component, createContext } from "react";
 
-const LayoutContext = createContext();
-
+export const LayoutContext = createContext();
 class LayoutContextProvider extends Component {
   state = {
     nightmode: false,
