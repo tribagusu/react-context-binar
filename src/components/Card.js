@@ -4,7 +4,7 @@ import CardName from "./CardName";
 
 const Card = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "red" }}>
       <CardName />
       <CardImage />
     </div>
