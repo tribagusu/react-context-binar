@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-export const mainContext = createContext({
+export const MainContext = createContext({
   empty: true,
 });

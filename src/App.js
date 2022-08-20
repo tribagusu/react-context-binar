@@ -1,7 +1,7 @@
 import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
-import { mainContext } from "./context/mainContext";
+import { MainContext } from "./context/MainContext";
 
 function App() {
   const [data, setData] = useState({
@@ -9,14 +9,14 @@ function App() {
     avatar: "https://reqres.in/img/faces/2-image.jpg",
   });
 
-  const mainContextValue = {
+  const MainContextValue = {
     data,
   };
   return (
     <div>
-      <mainContext.Provider value={mainContextValue}>
+      <MainContext.Provider value={MainContextValue}>
         <Card />
-      </mainContext.Provider>
+      </MainContext.Provider>
     </div>
   );
 }
