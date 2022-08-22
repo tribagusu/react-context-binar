@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { MainContext } from "../context/MainContext";
+import { MainContext2 } from "../context/MainContext2";
 const CardImage = () => {
-  const context = useContext(MainContext);
+  const { data } = useContext(MainContext2);
   return (
     <div>
-      <img src={context.data.avatar} alt="" />
+      <img src={data.avatar} alt="" />
     </div>
   );
 };

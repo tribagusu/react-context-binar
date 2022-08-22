@@ -1,24 +1,15 @@
 import "./App.css";
 import Card from "./components/Card";
-import { useState } from "react";
-import { MainContext } from "./context/MainContext";
+import MainContextProvider from "./context/MainContext2";
 import LayoutContextProvider from "./context/LayoutContext2";
 
 function App() {
-  const [data, setData] = useState({
-    name: "bagus",
-    avatar: "https://reqres.in/img/faces/2-image.jpg",
-  });
-
-  const MainContextValue = {
-    data,
-  };
   return (
     <div>
       <LayoutContextProvider>
-        <MainContext.Provider value={MainContextValue}>
+        <MainContextProvider>
           <Card />
-        </MainContext.Provider>
+        </MainContextProvider>
       </LayoutContextProvider>
     </div>
   );
