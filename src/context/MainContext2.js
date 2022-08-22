@@ -3,7 +3,7 @@ import React, { createContext, useState } from "react";
 export const MainContext2 = createContext({
   empty: true,
 });
-const MainContextProvider = ({ children }) => {
+const MainContextProvider2 = ({ children }) => {
   const [data, setData] = useState({
     name: "My Name",
     avatar: "https://reqres.in/img/faces/2-image.jpg",
@@ -14,4 +14,4 @@ const MainContextProvider = ({ children }) => {
   );
 };
 
-export default MainContextProvider;
+export default MainContextProvider2;
