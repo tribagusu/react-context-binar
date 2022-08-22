@@ -2,7 +2,7 @@ import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
 import { MainContext } from "./context/MainContext";
-import LayoutContextProvider from "./context/LayoutContext";
+import LayoutContextProvider from "./context/LayoutContext2";
 
 function App() {
   const [data, setData] = useState({
